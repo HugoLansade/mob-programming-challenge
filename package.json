@@ -2,9 +2,10 @@
   "name": "mob-programming-challenge",
   "version": "1.0.0",
   "description": "You've been randomly assigned to a team.  \r Pick one member of your team to fork the provided repo :  \r https://github.com/Kostra0ne/mob-programming-challenge.  \r He/She will invite the other members of the team as collaborators.  \r The challenge includes several **iterations**.  \r Work as a **team** and pass the **ball**.  \r When your turn comes, you are the **driver** and the other are the **navigators**.  \r Push your code with **explicit** commit messages.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon ./app.js -e .js,.hbs"
   },
   "repository": {
     "type": "git",
