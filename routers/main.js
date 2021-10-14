@@ -3,6 +3,7 @@ const { application, request } = require("express");
 const express = require("express");
 const router = new express.Router();
 
+
 const images = [
     "/img/greg-rakozy-oMpAz-DN-9I-unsplash.jpg", 
     "/img/joshua-aragon-FGXqbqbGt5o-unsplash.jpg", 
@@ -17,16 +18,17 @@ const users = [
 
 
 const homeController = (request, result) => {
-    result.render("home.hbs", images);
+    result.render("home.hbs", {images});
 }
 
 const squadController = (request, result)=> {
-    result.render("allUsers.hbs", users);
+    result.render("allUsers.hbs", {users});
 }
 
 const addController = (request, result) => {
     result.render("formUser.hbs");
 }
+
 
 
 
